@@ -1,0 +1,18 @@
+rotate_left(x, n) {
+  set first_bit_mask to 1 shl 31;
+  set i to 0;
+  while (i < n) {
+    set first_bit to x and first_bit_mask;
+    set x to x shl 1 or first_bit shr 31;
+    set i to i + 1
+  };
+  x
+}
+
+main() {
+  set flag to not 0;
+  set tmp to 10;
+  print tmp;
+  set tmp to call rotate_left(tmp, 4);
+  print tmp
+}

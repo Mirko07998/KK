@@ -1,0 +1,15 @@
+# jezik podrzava jednolinijske komentare
+# i obavezno ima main funkciju
+main() {
+  # stampanje dekadno
+  print 4 or 1226 and 0xf;
+  print not 23 and 0xff;
+  print 16 shl 4 shr 1;
+  print 16 shl (4 shr 1);
+  # dodela
+  set tmp to 127 shl 2;
+  print tmp or 1024 shl 1;
+  # stampanje heksadekadno
+  set flag to not 0;
+  print tmp or 1024 shl 1
+}

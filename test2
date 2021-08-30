@@ -1,0 +1,15 @@
+f(x, y, z) {
+  set a to x or y;
+  a or z
+}
+
+one() {
+  1
+}
+
+main() {
+  set tmp to call f(8 or 2, 4, 1);
+  print tmp;
+  set tmp to call one();
+  print tmp
+}
